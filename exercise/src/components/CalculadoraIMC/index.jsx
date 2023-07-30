@@ -73,7 +73,6 @@ const CalculadoraIMC = ({ altura, peso, aberto }) => {
                         onClick={fecharResultado}
                         borderRadius={100}
                         padding={0}
-                        colorScheme="red"
                     >
                         <GrFormClose size={40} opacity={"50%"} />
                     </Button>
@@ -103,7 +102,7 @@ const getCategoryStyle = (categoriaIMC) => {
         case "Sobrepeso":
             return { color: "orange" };
         case "Obesidade grau 1":
-            return { color: "yellow" };
+            return { color: "pink" };
         case "Obesidade grau 2":
             return { color: "purple" };
         case "Obesidade grau 3":
